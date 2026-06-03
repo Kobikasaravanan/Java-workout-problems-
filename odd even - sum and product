@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        long sum=0;
+        long prod=1;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            sum+=arr[i];
+            prod*=arr[i];
+        }
+        if(sum%2==0)
+        {
+            System.out.println("Sum of the elements is even: "+sum);
+        }
+        else 
+        {
+            if(prod%2==0)
+            {
+                System.out.println("Product of the elements is even: "+prod);
+            }
+            else
+            {
+                System.out.println("Product of the elements is odd: "+prod);
+            }
+        }
+    }
+}
