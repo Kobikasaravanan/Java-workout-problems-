@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String orginal=sc.nextLine();
+        String replaced=sc.nextLine();
+        String repsb=sc.nextLine();
+        String result=orginal.replace(replaced,repsb);
+        System.out.print(result);
+    }
+}
